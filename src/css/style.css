@@ -1,0 +1,68 @@
+/*
+     Fonts:
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(197, 153, 238);
+  display: flex;
+  font-size: max(2.3vw, 2rem);
+  padding: 0.2em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: min(3em);
+}
+
+.navbar h1 {
+  font-family: "Bebas Neue", cursive;
+  position: relative;
+}
+
+.navbar h1 > span {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 0.32em;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: max-content;
+  background-color: rgba(197, 153, 238, 0.2);
+}
+
+.navbar ul {
+  display: flex;
+  font-family: initial;
+  gap: 1em;
+  font-size: 0.8em;
+}
+
+.navbar .link {
+  list-style: none;
+}
+
+.navbar .link a {
+  text-decoration: none;
+}
+
+.navbar .link a:hover {
+  background-color: rgba(128, 2, 128, 0.1);
+  color: rgb(128, 2, 128);
+}
