@@ -2,21 +2,18 @@
   import Icon from "svelte-icons-pack/Icon.svelte";
   import AiFillYoutube from "svelte-icons-pack/ai/AiFillYoutube";
   import AiFillGithub from "svelte-icons-pack/ai/AiFillGithub";
-  console.log("Tyson3101");
+  function getCurrentDate() {
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    return `${`${day}`.length >= 2 ? day : `0${day}`}:${
+      `${month}`.length >= 2 ? month : `0${month}`
+    }:${year}`;
+  }
 </script>
 
 <header>
   <h1>Tyson3101</h1>
-  <div>
-    <a
-      target="_blank"
-      href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
-    >
-      <Icon src={AiFillYoutube} color={"red"} /></a
-    >
-    {">"}
-    <a target="_blank" href="https://github.com/Tyson3101">
-      <Icon src={AiFillGithub} color={"white"} /></a
-    >
-  </div>
+  <p style="font-size: 0.6em;">{getCurrentDate()}</p>
 </header>

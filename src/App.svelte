@@ -12,29 +12,41 @@
 <main>
   <Navbar />
   <section class="index">
-    <p transition:fade={{ duration: 1000, delay: 100 }} class="info">
-      Hi, I am Tyson. I live in Melbourne Australia!
+    <p class="info">
+      Hi, I am Tyson.<br /><span
+        transition:fade={{ duration: 1500, delay: 300 }}
+        >Rocket League GC, Typescript Main.</span
+      >
     </p>
-    <div>
-      <h4 transition:fly={{ x: -1000, duration: 2000 }}>Latest Video</h4>
-      <iframe
-        transition:fly={{ x: 2000, duration: 2000, delay: 300 }}
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/SEwyQpfAZ54"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
+    <div class="links">
+      <h3>{"< "}Links{" />"}</h3>
+      <ul>
+        <li transition:fly={{ x: -1000, duration: 2000 }}>
+          <a href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
+            >Youtube</a
+          >
+        </li>
+        <li transition:fly={{ x: 1000, duration: 2000 }}>
+          <a href="https://github.com/Tyson3101">Github</a>
+        </li>
+        <li transition:fly={{ x: -1000, duration: 2000 }}>
+          <a href="https://twitter.com/tysonf3101">Twitter</a>
+        </li>
+      </ul>
     </div>
     <div>
       <h5>Tools I am familer with:</h5>
-      <TypescriptIcon />
-      <JavascriptIcon />
-      <HTMLIcon />
-      <CSSIcon />
-      <NodeJsIcon />
+      <div style="display: flex;">
+        <p transition:fly={{ x: -1000, duration: 1000 }}><TypescriptIcon /></p>
+        <p transition:fly={{ x: -1000, duration: 1000, delay: 300 }}>
+          <JavascriptIcon />
+        </p>
+        <p transition:fade={{ delay: 1200 }}><HTMLIcon /></p>
+        <p transition:fly={{ x: 1000, duration: 1000, delay: 300 }}>
+          <CSSIcon />
+        </p>
+        <p transition:fly={{ x: 1000, duration: 1000 }}><NodeJsIcon /></p>
+      </div>
     </div>
   </section>
 </main>
