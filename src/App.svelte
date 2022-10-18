@@ -1,52 +1,43 @@
 <script lang="ts">
-  import { fly, fade } from "svelte/transition";
-  import TypescriptIcon from "./assets/icons/tools/Typescript.svelte";
-  import JavascriptIcon from "./assets/icons/tools/Javascript.svelte";
-  import HTMLIcon from "./assets/icons/tools/HTML.svelte";
-  import CSSIcon from "./assets/icons/tools/CSS.svelte";
-  import NodeJsIcon from "./assets/icons/tools/NodeJs.svelte";
   import Navbar from "./lib/Navbar.svelte";
-  console.log("Tyson3101");
+  import Projects from "./lib/pages/Projects.svelte";
+  import Intro from "./lib/pages/Intro.svelte";
+  let showLatestVideo = false;
+  function toggleLatest() {
+    showLatestVideo = !showLatestVideo;
+    document.querySelector("body").style.overflowY = showLatestVideo
+      ? "hidden"
+      : "scroll";
+  }
 </script>
 
+<Navbar />
 <main>
-  <Navbar />
-  <section class="index">
-    <p class="info">
-      Hi, I am Tyson.<br /><span
-        transition:fade={{ duration: 1500, delay: 300 }}
-        >Rocket League GC, Typescript Main.</span
-      >
+  <Intro />
+  <Projects />
+  {#if showLatestVideo}
+    <div id="overlay" on:click={toggleLatest} on:keydown={toggleLatest} />
+    <div id="overlayContent">
+      <h1>Latest Video</h1>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/SEwyQpfAZ54"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </div>
+  {/if}
+  <div class="bottom">
+    <p
+      class="clickable showLatestVideo"
+      on:keydown={toggleLatest}
+      on:click={toggleLatest}
+    >
+      Show latest video
     </p>
-    <div class="links">
-      <h3>{"< "}Links{" />"}</h3>
-      <ul>
-        <li transition:fly={{ x: -1000, duration: 2000 }}>
-          <a href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
-            >Youtube</a
-          >
-        </li>
-        <li transition:fly={{ x: 1000, duration: 2000 }}>
-          <a href="https://github.com/Tyson3101">Github</a>
-        </li>
-        <li transition:fly={{ x: -1000, duration: 2000 }}>
-          <a href="https://twitter.com/tysonf3101">Twitter</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h5>Tools I am familer with:</h5>
-      <div style="display: flex;">
-        <p transition:fly={{ x: -1000, duration: 1000 }}><TypescriptIcon /></p>
-        <p transition:fly={{ x: -1000, duration: 1000, delay: 300 }}>
-          <JavascriptIcon />
-        </p>
-        <p transition:fade={{ delay: 1200 }}><HTMLIcon /></p>
-        <p transition:fly={{ x: 1000, duration: 1000, delay: 300 }}>
-          <CSSIcon />
-        </p>
-        <p transition:fly={{ x: 1000, duration: 1000 }}><NodeJsIcon /></p>
-      </div>
-    </div>
-  </section>
+    <h6>Scroll to see more</h6>
+  </div>
 </main>
