@@ -19,37 +19,28 @@ main {
 }
 
 body {
-  overflow: hidden;
-  background-color: rgb(22, 19, 19);
+  overflow-x: hidden;
+  /* background-color: rgb(22, 19, 19); */
+  background-color: rgb(9, 9, 17);
   color: whitesmoke;
   font-size: min(2rem, 5vw);
   font-family: "Righteous", cursive, Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 2rem;
-}
-
 section {
-  height: 90%;
+  height: 10 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-
-svg,
-button {
-  cursor: pointer;
+  overflow: hidden;
 }
 
 .info {
-  font-size: 1.6em;
+  font-size: 2.3em;
+  margin-bottom: 0.5em;
 }
 
 .info > span {
@@ -59,45 +50,53 @@ button {
   text-decoration: overline;
 }
 
-.links {
-  position: relative;
-  top: -25px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.clickable {
+  cursor: pointer;
+  transition: color ease-in-out 0.3s;
+  color: whitesmoke;
 }
 
-.links ul {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3em;
-  list-style: none;
+.clickable:hover {
+  transition: color ease-in-out 0.3s;
+  color: rgb(124, 120, 120);
 }
 
-.links ul li {
-  width: 100%;
+#overlay {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 110vw;
+  height: 130vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
 }
 
-.links a {
-  display: block;
-  border-radius: 12px;
-  transition: background-color ease-in 0.2s;
-  background-color: gainsboro;
-  color: black;
-  font-family: Inter;
-  text-decoration: none;
-  padding: 0.1em;
+#overlayContent {
+  overflow: hidden;
+  z-index: 2001;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.links a:hover {
-  transition: background-color ease-in 0.2s;
-  background-color: rgb(193, 185, 185);
+iframe {
+  aspect-ratio: 16 /9;
+  width: 80vw;
+  height: auto;
 }
 
-@media (max-width: 800px) {
-  .links ul {
-    width: 80%;
+.bottom {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+}
+
+@media (min-width: 1000px) {
+  iframe {
+    width: 60vw;
   }
 }
