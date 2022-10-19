@@ -9,7 +9,7 @@
   import SvelteIcon from "../../assets/icons/tools/Svelte.svelte";
 </script>
 
-<section class="index" id="1">
+<section class="index" id="intro" data-scrollId="1">
   <p class="info">
     Hi, I am Tyson.<br /><span transition:fade={{ duration: 1500, delay: 300 }}
       >Rocket League GC, Typescript Main.</span
@@ -19,21 +19,25 @@
     <h3>{"< "}Links{" />"}</h3>
     <ul>
       <li transition:fly={{ x: -1000, duration: 2000 }}>
-        <a href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
           >Youtube</a
         >
       </li>
       <li transition:fly={{ x: 1000, duration: 2000 }}>
-        <a href="https://github.com/Tyson3101">Github</a>
+        <a target="_blank" href="https://github.com/Tyson3101">Github</a>
       </li>
       <li transition:fly={{ x: -1000, duration: 2000 }}>
-        <a href="https://twitter.com/tysonf3101">Twitter</a>
+        <a target="_blank" href="https://twitter.com/tysonf3101">Twitter</a>
       </li>
       <li transition:fly={{ x: 1000, duration: 2000 }}>
-        <a href="https://twitter.com/tysonf3101">Instagram</a>
+        <a target="_blank" href="https://discord.com/users/397737988915724310"
+          >Discord</a
+        >
       </li>
       <li transition:fly={{ x: -1000, duration: 2000 }}>
-        <a href="https://twitter.com/tysonf3101">Twitch</a>
+        <a target="_blank" href="https://twitch.tv/xTyson3101">Twitch</a>
       </li>
     </ul>
   </div>
@@ -67,6 +71,9 @@
 </section>
 
 <style>
+  .info {
+    margin-bottom: 0.5em;
+  }
   .tools *:not(h5) {
     cursor: pointer;
   }

@@ -35,12 +35,11 @@ section {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .info {
   font-size: 2.3em;
-  margin-bottom: 0.5em;
 }
 
 .info > span {
@@ -48,6 +47,10 @@ section {
   top: -25px;
   font-size: 0.45em;
   text-decoration: overline;
+}
+.info a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .clickable {
@@ -101,8 +104,11 @@ iframe {
   }
 }
 
-@media ((max-height: 700px)) {
+@media ((max-height: 750px)) {
   section {
-    transform: scale(0.8);
+    transform: scale(1);
+  }
+  section .info {
+    display: none;
   }
 }

@@ -14,7 +14,7 @@
 <Navbar />
 <main>
   <Intro />
-  <Projects />
+  <Projects bottom={true} />
   {#if showLatestVideo}
     <div id="overlay" on:click={toggleLatest} on:keydown={toggleLatest} />
     <div id="overlayContent">
