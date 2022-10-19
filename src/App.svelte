@@ -1,24 +1,25 @@
 <script lang="ts">
-  import { fly, fade } from "svelte/transition";
-  import TypescriptIcon from "./assets/icons/tools/Typescript.svelte";
-  import JavascriptIcon from "./assets/icons/tools/Javascript.svelte";
-  import HTMLIcon from "./assets/icons/tools/HTML.svelte";
-  import CSSIcon from "./assets/icons/tools/CSS.svelte";
-  import NodeJsIcon from "./assets/icons/tools/NodeJs.svelte";
   import Navbar from "./lib/Navbar.svelte";
-  console.log("Tyson3101");
+  import Projects from "./lib/pages/Projects.svelte";
+  import Intro from "./lib/pages/Intro.svelte";
+  let showLatestVideo = false;
+  function toggleLatest() {
+    showLatestVideo = !showLatestVideo;
+    document.querySelector("body").style.overflowY = showLatestVideo
+      ? "hidden"
+      : "scroll";
+  }
 </script>
 
+<Navbar />
 <main>
-  <Navbar />
-  <section class="index">
-    <p transition:fade={{ duration: 1000, delay: 100 }} class="info">
-      Hi, I am Tyson. I live in Melbourne Australia!
-    </p>
-    <div>
-      <h4 transition:fly={{ x: -1000, duration: 2000 }}>Latest Video</h4>
+  <Intro />
+  <Projects bottom={true} />
+  {#if showLatestVideo}
+    <div id="overlay" on:click={toggleLatest} on:keydown={toggleLatest} />
+    <div id="overlayContent">
+      <h1>Latest Video</h1>
       <iframe
-        transition:fly={{ x: 2000, duration: 2000, delay: 300 }}
         width="560"
         height="315"
         src="https://www.youtube.com/embed/SEwyQpfAZ54"
@@ -28,13 +29,15 @@
         allowfullscreen
       />
     </div>
-    <div>
-      <h5>Tools I am familer with:</h5>
-      <TypescriptIcon />
-      <JavascriptIcon />
-      <HTMLIcon />
-      <CSSIcon />
-      <NodeJsIcon />
-    </div>
-  </section>
+  {/if}
+  <div class="bottom">
+    <p
+      class="clickable showLatestVideo"
+      on:keydown={toggleLatest}
+      on:click={toggleLatest}
+    >
+      Show latest video
+    </p>
+    <h6>Scroll to see more</h6>
+  </div>
 </main>
