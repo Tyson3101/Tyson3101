@@ -14,7 +14,7 @@
 <Navbar />
 <main>
   <Intro />
-  <Projects bottom={true} />
+  <Projects />
   {#if showLatestVideo}
     <div id="overlay" on:click={toggleLatest} on:keydown={toggleLatest} />
     <div id="overlayContent">
@@ -30,6 +30,7 @@
       />
     </div>
   {/if}
+  <br />
   <div class="bottom">
     <p
       class="clickable showLatestVideo"
@@ -38,6 +39,6 @@
     >
       Show latest video
     </p>
-    <h6>Scroll to see more</h6>
+    <p>Scroll to see more</p>
   </div>
 </main>

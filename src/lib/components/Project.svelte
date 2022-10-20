@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.3em;
-    width: 35vw;
+    width: 45vw;
     min-height: 18vh;
     font-size: max(2vw, 1em);
     position: relative;
