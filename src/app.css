@@ -87,6 +87,10 @@ section {
   transform: translate(-50%, -50%);
 }
 
+#overlayContent a {
+  color: inherit;
+}
+
 iframe {
   aspect-ratio: 16 /9;
   width: 80vw;
@@ -122,5 +126,10 @@ iframe {
 @media ((max-height: 550px)) {
   section {
     transform: scale(0.6);
+  }
+}
+@media ((max-height: 350px)) {
+  section {
+    transform: scale(0.4);
   }
 }

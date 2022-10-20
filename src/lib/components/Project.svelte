@@ -7,7 +7,7 @@
 
 <div class="project">
   <div class="projectHeader">
-    <a target="_blank" href={link}><h1>{name}</h1></a>
+    <a target="_blank" href={link}>{name}</a>
     <p class="description">{description}</p>
   </div>
   <div class="projectFooter">
@@ -33,8 +33,8 @@
   .project > * {
     margin-left: 0.1em;
   }
-  h1 {
-    font-size: 0.8em;
+  .projectHeader a {
+    font-size: 1.05em;
   }
   .description {
     font-size: 0.8em;

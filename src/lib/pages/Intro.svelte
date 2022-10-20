@@ -9,7 +9,7 @@
   import SvelteIcon from "../../assets/icons/tools/Svelte.svelte";
 </script>
 
-<section class="index" id="intro" data-scrollId="1">
+<section class="index" name="about" id="about" data-scrollId="1">
   <p class="info">
     Hi, I am Tyson.<br /><span transition:fade={{ duration: 1500, delay: 300 }}
       >Rocket League GC, Typescript Main.</span

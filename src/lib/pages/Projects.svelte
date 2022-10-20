@@ -64,4 +64,9 @@
     gap: 1.3em;
     flex-wrap: wrap;
   }
+  @media (max-width: 900px) {
+    .projects {
+      gap: 3vw;
+    }
+  }
 </style>

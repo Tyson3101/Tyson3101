@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.8em;
   }
   header > * {
     margin: 0 0.5rem;

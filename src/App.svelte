@@ -2,6 +2,7 @@
   import Navbar from "./lib/Navbar.svelte";
   import Projects from "./lib/pages/Projects.svelte";
   import Intro from "./lib/pages/Intro.svelte";
+  import Videos from "./lib/pages/Videos.svelte";
   let showLatestVideo = false;
   function toggleLatest() {
     showLatestVideo = !showLatestVideo;
@@ -15,6 +16,7 @@
 <main>
   <Intro />
   <Projects />
+  <Videos />
   {#if showLatestVideo}
     <div id="overlay" on:click={toggleLatest} on:keydown={toggleLatest} />
     <div id="overlayContent">
@@ -28,6 +30,9 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
+      <a href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
+        >View all videos</a
+      >
     </div>
   {/if}
   <br />
