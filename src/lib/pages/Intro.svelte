@@ -9,14 +9,14 @@
   import SvelteIcon from "../../assets/icons/tools/Svelte.svelte";
 </script>
 
-<section class="index" id="intro" data-scrollId="1">
+<section class="index" name="about" id="about" data-scrollId="1">
   <p class="info">
     Hi, I am Tyson.<br /><span transition:fade={{ duration: 1500, delay: 300 }}
       >Rocket League GC, Typescript Main.</span
     >
   </p>
   <div class="links">
-    <h3>{"< "}Links{" />"}</h3>
+    <p>{"< "}Links{" />"}</p>
     <ul>
       <li transition:fly={{ x: -1000, duration: 2000 }}>
         <a
@@ -43,7 +43,7 @@
   </div>
 
   <div class="tools">
-    <h5>Tools I am familer with:</h5>
+    <p>Tools I am familer with:</p>
     <div style="display: flex;">
       <p transition:fly={{ x: -1000, duration: 1100, delay: 300 }}>
         <TypescriptIcon />
@@ -74,10 +74,12 @@
   .info {
     margin-bottom: 0.5em;
   }
-  .tools *:not(h5) {
+  .tools *:not(p) {
     cursor: pointer;
   }
-
+  .links p {
+    font-size: 1.5em;
+  }
   .links {
     position: relative;
     top: -25px;

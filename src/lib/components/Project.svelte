@@ -7,7 +7,7 @@
 
 <div class="project">
   <div class="projectHeader">
-    <a target="_blank" href={link}><h1>{name}</h1></a>
+    <a target="_blank" href={link}>{name}</a>
     <p class="description">{description}</p>
   </div>
   <div class="projectFooter">
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.3em;
-    width: 35vw;
+    width: 45vw;
     min-height: 18vh;
     font-size: max(2vw, 1em);
     position: relative;
@@ -33,8 +33,8 @@
   .project > * {
     margin-left: 0.1em;
   }
-  h1 {
-    font-size: 0.8em;
+  .projectHeader a {
+    font-size: 1.05em;
   }
   .description {
     font-size: 0.8em;
