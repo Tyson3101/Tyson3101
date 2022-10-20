@@ -57,11 +57,6 @@
     >
   </p>
   <div class="videos">
-    <a
-      class="viewAllVideos"
-      href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
-      >View all videos</a
-    >
     {#each videos as video}
       <Video {...video} />
     {/each}
@@ -71,20 +66,13 @@
 <style>
   .videos {
     padding-bottom: 1em;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 1em;
-    flex-wrap: wrap;
     position: relative;
   }
   .info {
     margin-bottom: 1.3vh;
-  }
-  .viewAllVideos {
-    font-size: 0.8em;
-    position: absolute;
-    top: -7%;
-    color: inherit;
   }
   @media (max-width: 900px) {
     .videos {

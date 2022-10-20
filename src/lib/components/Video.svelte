@@ -28,8 +28,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.3em;
-    min-height: 28vh;
-    width: 20vw;
+    min-height: 30vh;
+    width: min-content;
     font-size: max(2vw, 1em);
     position: relative;
   }
@@ -71,7 +71,7 @@
   @media (max-width: 1200px) {
     .video {
       width: 28vw;
-      min-height: 26vh;
+      font-size: 0.8em;
     }
     .video img {
       width: 100%;
