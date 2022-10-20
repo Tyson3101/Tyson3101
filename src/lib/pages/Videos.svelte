@@ -83,7 +83,7 @@
   .viewAllVideos {
     font-size: 0.8em;
     position: absolute;
-    top: -6%;
+    top: -7%;
     color: inherit;
   }
   @media (max-width: 900px) {

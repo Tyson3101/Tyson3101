@@ -29,13 +29,13 @@
     flex-direction: column;
     gap: 0.3em;
     min-height: 28vh;
-    width: 30vw;
+    width: 20vw;
     font-size: max(2vw, 1em);
     position: relative;
   }
   .video img {
-    width: 100%;
-    height: 100%;
+    width: 14rem;
+    height: 8rem;
     border: 1px solid rgb(0, 0, 0);
   }
   .videoHeader {
@@ -67,5 +67,15 @@
   }
   a {
     color: inherit;
+  }
+  @media (max-width: 1200px) {
+    .video {
+      width: 28vw;
+      min-height: 26vh;
+    }
+    .video img {
+      width: 100%;
+      height: 100%;
+    }
   }
 </style>
