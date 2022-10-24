@@ -50,6 +50,11 @@
     >
   </p>
   <div class="projects">
+    <a
+      href="https://github.com/Tyson3101?tab=repositories"
+      target="_blank"
+      class="viewAllMsg">View All</a
+    >
     {#each projects as project}
       <Project {...project} />
     {/each}

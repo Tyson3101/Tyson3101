@@ -10,7 +10,7 @@
     <a target="_blank" href={link}>
       <img src={thumbnail} alt="YT Thumbnail" /></a
     >
-    <hr />
+
     <a target="_blank" class="title" href={link}>{name}</a>
   </div>
   <div class="videoFooter">
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.3em;
-    min-height: 30vh;
+    min-height: max-content;
     width: min-content;
     font-size: max(2vw, 1em);
     position: relative;
@@ -47,7 +47,9 @@
   .videoHeader .title {
     font-size: 0.5em;
     text-decoration: none;
+    margin-bottom: 2rem;
   }
+
   .date {
     font-size: 0.4em;
   }

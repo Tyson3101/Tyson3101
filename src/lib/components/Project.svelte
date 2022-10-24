@@ -27,7 +27,7 @@
     gap: 0.3em;
     width: 45vw;
     min-height: 18vh;
-    font-size: max(2vw, 1em);
+    font-size: max(2vw, 1.2em);
     position: relative;
   }
   .project > * {

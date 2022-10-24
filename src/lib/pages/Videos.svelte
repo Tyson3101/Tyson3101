@@ -57,6 +57,11 @@
     >
   </p>
   <div class="videos">
+    <a
+      href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
+      target="_blank"
+      class="viewAllMsg">View All</a
+    >
     {#each videos as video}
       <Video {...video} />
     {/each}

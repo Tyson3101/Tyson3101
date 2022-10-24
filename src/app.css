@@ -51,8 +51,34 @@ section {
   text-decoration: overline;
 }
 .info a {
+  position: relative;
   text-decoration: none;
   color: inherit;
+}
+
+.info a span {
+  position: absolute;
+  width: max-content;
+  top: 70%;
+  margin-left: 4%;
+  font-size: 0.2em;
+}
+
+.videos,
+.projects {
+  position: relative;
+}
+
+.viewAllMsg {
+  font-size: 0.7em;
+  position: absolute;
+  top: -6%;
+  color: inherit;
+}
+
+.videos .viewAllMsg {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .clickable {
