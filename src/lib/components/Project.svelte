@@ -26,12 +26,14 @@
     flex-direction: column;
     gap: 0.3em;
     width: 45vw;
-    min-height: 18vh;
-    font-size: max(2vw, 1.2em);
+    font-size: 1.1em;
     position: relative;
   }
   .project > * {
     margin-left: 0.1em;
+  }
+  .projectHeader {
+    margin-bottom: 4vh;
   }
   .projectHeader a {
     font-size: 1.05em;

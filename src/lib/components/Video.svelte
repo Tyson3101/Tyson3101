@@ -30,12 +30,12 @@
     gap: 0.3em;
     min-height: max-content;
     width: min-content;
-    font-size: max(2vw, 1em);
+    font-size: 1.2em;
     position: relative;
   }
   .video img {
     width: 14rem;
-    height: 8rem;
+    height: auto;
     border: 1px solid rgb(0, 0, 0);
   }
   .videoHeader {
@@ -45,7 +45,7 @@
     align-items: center;
   }
   .videoHeader .title {
-    font-size: 0.5em;
+    font-size: max(0.5em, 1.7vh);
     text-decoration: none;
     margin-bottom: 2rem;
   }
