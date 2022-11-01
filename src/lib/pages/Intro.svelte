@@ -19,11 +19,7 @@
     <p>{"< "}Links{" />"}</p>
     <ul>
       <li transition:fly={{ x: -1000, duration: 2000 }}>
-        <a
-          target="_blank"
-          href="https://www.youtube.com/channel/UCDhbvtFFtYvv9kH-kcdVsWg"
-          >Youtube</a
-        >
+        <a target="_blank" href="https://www.youtube.com/@Tyson3101">Youtube</a>
       </li>
       <li transition:fly={{ x: 1000, duration: 2000 }}>
         <a target="_blank" href="https://github.com/Tyson3101">Github</a>

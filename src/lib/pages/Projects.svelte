@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fly, fade } from "svelte/transition";
+  import { fade } from "svelte/transition";
   import Project from "../components/Project.svelte";
 
   const projects = [
@@ -7,7 +7,7 @@
       name: "Medal Bypass",
       description: "Bypasses Medal Paywall",
       link: "https://github.com/Tyson3101/Medal-Bypass",
-      language: "Javascript",
+      language: "Typescript",
     },
     {
       name: "Auto Tiktok Scroller",

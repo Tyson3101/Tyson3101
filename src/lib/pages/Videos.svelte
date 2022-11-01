@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fly, fade } from "svelte/transition";
+  import { fade } from "svelte/transition";
   import Video from "../components/Video.svelte";
   const videos = [
     {
