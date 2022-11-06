@@ -12,7 +12,7 @@
     {
       name: "Auto Youtube Shorts Scroller",
       description: "Adds Autoscroll to YT Shorts",
-      link: "https://github.com/Tyson3101/Auto-TikTok-Scroller",
+      link: "https://github.com/Tyson3101/Auto-Youtube-Shorts-Scroller",
       language: "Typescript",
     },
     {
@@ -36,7 +36,7 @@
     {
       name: "Redirect Stopper",
       description: "A Chrome Extension that blocks redirects.",
-      link: "https://github.com/Tyson3101/BookReadPlanner",
+      link: "https://github.com/Tyson3101/Redirect-Stopper",
       language: "Typescript",
     },
   ];
