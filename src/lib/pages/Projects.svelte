@@ -10,8 +10,8 @@
       language: "Typescript",
     },
     {
-      name: "Auto Tiktok Scroller",
-      description: "Adds Autoscroll to TikTok",
+      name: "Auto Youtube Shorts Scroller",
+      description: "Adds Autoscroll to YT Shorts",
       link: "https://github.com/Tyson3101/Auto-TikTok-Scroller",
       language: "Typescript",
     },
@@ -34,10 +34,10 @@
       language: "Typescript",
     },
     {
-      name: "Book Read Planner",
-      description: "A Tool That Plans Your Read Schedule",
+      name: "Redirect Stopper",
+      description: "A Chrome Extension that blocks redirects.",
       link: "https://github.com/Tyson3101/BookReadPlanner",
-      language: "HTML/CSS/JS",
+      language: "Typescript",
     },
   ];
 </script>
