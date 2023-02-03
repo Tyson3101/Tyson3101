@@ -3,6 +3,13 @@
   import Video from "../components/Video.svelte";
   const videos = [
     {
+      name: "Epic R̶o̶c̶k̶e̶t̶ ̶L̶e̶a̶g̶u̶e̶ Montage #4",
+      link: "https://www.youtube.com/watch?v=JCFk_F1M1-A&feature=youtu.be&ab_channel=Tyson3101",
+      thumbnail:
+        "https://i.ytimg.com/vi/JCFk_F1M1-A/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgIFmx7sBw21IpJJXwsPAwGe0eBA",
+      date: "Jan 16, 2023",
+    },
+    {
       name: "[EASY] How to Download Medal Clips Without Watermarks for Free. (2022)",
       link: "https://www.youtube.com/watch?v=SEwyQpfAZ54",
       thumbnail:
@@ -36,13 +43,6 @@
       thumbnail:
         "https://i.ytimg.com/vi/paoIG5Uqv-A/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDxr3B0lA3fGP3lRN4kLC1o5234Dw",
       date: "Jan 16, 2022",
-    },
-    {
-      name: "Buzzing Bee with Perlin Noise | p5.js",
-      link: "https://youtu.be/yeMV1xNY2og",
-      thumbnail:
-        "https://i.ytimg.com/vi/yeMV1xNY2og/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBL3PzqvzMnLuAmw4slXAz7e1OZjw",
-      date: "Aug 2, 2021",
     },
   ];
 </script>
