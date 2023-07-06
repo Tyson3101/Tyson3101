@@ -1,36 +1,65 @@
 <script lang="ts">
+  export let pages: any;
+  export let handlePages: (pages: any) => any;
+
+  function captalizeFirstLetter(str: string) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  let activePage = window.location.hash
+    ? window.location.hash.slice(1)
+    : "home";
+
+  window.onhashchange = () => {
+    activePage = window.location.hash ? window.location.hash.slice(1) : "home";
+  };
 </script>
 
-<header>
-  <h1>Tyson3101</h1>
-  <p style="font-size: 0.6em;">
-    <a href="/#projects">Projects</a> <a href="/#videos">Videos</a>
-    <a href="/#about">About</a>
-  </p>
-</header>
+<nav>
+  <div class="links">
+    {#each Object.keys(pages).filter((key) => key !== activePage) as page}
+      <a
+        href={`#${page}`}
+        on:click={() => handlePages(page)}
+        on:keydown={() => handlePages(page)}>{captalizeFirstLetter(page)}</a
+      >
+    {/each}
+  </div>
+</nav>
 
 <style>
-  header {
-    z-index: 1999;
+  nav {
     position: fixed;
-    width: 100%;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+  }
+  .links {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: 1;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 0.8em;
-  }
-  header > * {
-    margin: 0 0.5rem;
+    padding: 1rem;
+    background-color: transparent;
   }
 
-  header a {
-    transition: color ease-in-out 0.3s;
-    color: inherit;
+  .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: color 0.5s ease-in-out;
   }
 
-  header a:hover {
-    transition: color ease-in-out 0.3s;
-    color: rgb(195, 195, 195);
+  .links a:hover {
+    color: var(--primary);
+    transition: color 0.5s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .links a {
+      font-size: 1rem;
+    }
   }
 </style>
