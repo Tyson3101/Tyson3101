@@ -36,10 +36,10 @@
 
   let changingPage = false;
   let activePage = window.location.hash
-    ? window.location.hash.slice(1)
+    ? window.location.hash.toLowerCase().slice(1)
     : "home";
   window.onhashchange = () => {
-    activePage = window.location.hash ? window.location.hash.slice(1) : "home";
+    activePage = window.location.hash ? window.location.hash.toLowerCase().slice(1) : "home";
   };
 
   let squares: number[] = [];
@@ -107,7 +107,7 @@
 </div>
 
 <main>
-  {#if activePage === "home"}
+  {#if (activePage === "home" || !Object.keys(pages).some(page => page === activePage))}
     <Home />
   {/if}
   {#if activePage === "projects"}
