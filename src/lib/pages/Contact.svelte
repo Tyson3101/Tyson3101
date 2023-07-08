@@ -94,7 +94,7 @@
   .links button a {
     color: whitesmoke;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     transition: color 0.5s ease-in-out;
     display: flex;
@@ -139,12 +139,12 @@
     border-radius: 0.5rem;
   }
   .contact form textarea {
-    padding: 0.8rem;
+    padding: 0.3rem 0.8rem;
     font-size: 1rem;
     margin-bottom: 1rem;
     border: none;
     border-radius: 0.5rem;
-    height: 100px;
+    height: 60px;
   }
 
   .contact form button {

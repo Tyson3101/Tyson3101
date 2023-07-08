@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { fade, fly } from "svelte/transition";
   let linkIconSize = 48;
   const links = [
     {
@@ -132,7 +131,7 @@
     }
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     .links button a {
@@ -140,13 +139,13 @@
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     .text-colour-effect {
       font-size: 18vw;
     }
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     .links button a {
@@ -168,9 +167,15 @@
     }
   }
 
+  @media screen and (max-width: 550px) {
+    .text-colour-effect {
+      font-size: 20vw;
+    }
+  }
+
   @media screen and (max-width: 400px) {
     .text-colour-effect {
-      font-size: 18vw;
+      font-size: 20vw;
     }
 
     h2 {

@@ -17,7 +17,7 @@
       secondary: "#03052a",
     },
     projects: {
-      background: "#4986ee",
+      background: "#0a40bf",
       primary: "#22374f",
       accent: "#0a0508",
       secondary: "#bdefda",
