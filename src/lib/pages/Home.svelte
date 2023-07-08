@@ -75,7 +75,7 @@
   }
 
   h2 {
-    color: var(--primary);
+    color: #8e91f6;
     font-size: 2rem;
   }
 
