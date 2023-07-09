@@ -43,7 +43,6 @@
       github: "https://github.com/Tyson3101/Tic-Tac-Toe",
       live: "https://game-tictactoe.fly.dev/",
       language: "javascript",
-      // github stars
       stats: [
         "https://badgen.net/github/stars/Tyson3101/Tic-Tac-Toe?color=blue&label=Stars&logo=github&logoColor=white&style=for-the-badge",
       ],
@@ -96,7 +95,7 @@
         "https://ondemand.bannerbear.com/signedurl/D0nJ4XLedwbENRZa1x/image.jpg?modifications=W3sibmFtZSI6InJlcG8iLCJ0ZXh0IjoiVHlzb24zMTAxIC8gKkltYWdlUmVzaXplcioifSx7Im5hbWUiOiJkZXNjIiwidGV4dCI6IkEgaGVscGZ1bCB0b29sIHRvIHJlc2l6ZSBpbWFnZXMifSx7Im5hbWUiOiJhdmF0YXI1IiwiaGlkZSI6dHJ1ZX0seyJuYW1lIjoiYXZhdGFyNCIsImhpZGUiOnRydWV9LHsibmFtZSI6ImF2YXRhcjMiLCJoaWRlIjp0cnVlfSx7Im5hbWUiOiJhdmF0YXIyIiwiaGlkZSI6dHJ1ZX0seyJuYW1lIjoiYXZhdGFyMSIsImltYWdlX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS82NzA0NTEzOD92PTQifSx7Im5hbWUiOiJjb250cmlidXRvcnMiLCJ0ZXh0IjoiVHlzb24zMTAxIn0seyJuYW1lIjoic3RhcnMiLCJ0ZXh0IjoiMCJ9XQ&s=3f5ffaab3c18911e9a5d86ec11429a3702494b09bb8f45478b75ed0369628dee",
     },
     {
-      link: "https://github.com/Tyson3101/NextAuth-SignUp-And-Signln",
+      link: "https://github.com/Tyson3101/NextAuth-SignUp-And-SignIn",
       preview:
         "https://ondemand.bannerbear.com/signedurl/D0nJ4XLedwbENRZa1x/image.jpg?modifications=W3sibmFtZSI6InJlcG8iLCJ0ZXh0IjoiVHlzb24zMTAxIC8gKk5leHRBdXRoLVNpZ25VcC1BbmQtU2lnbkluKiJ9LHsibmFtZSI6ImRlc2MiLCJ0ZXh0IjoiVGhpcyByZXBvc2l0b3J5IGlzIGEgc2ltcGxlIGV4YW1wbGUgb2YgaG93IHRvIHVzZSBOZXh0QXV0aCB0byBpbXBsZW1lbnQgdXNlciBzaWdudXAgYW5kIHNpZ25pbi4ifSx7Im5hbWUiOiJhdmF0YXI1IiwiaGlkZSI6dHJ1ZX0seyJuYW1lIjoiYXZhdGFyNCIsImhpZGUiOnRydWV9LHsibmFtZSI6ImF2YXRhcjMiLCJoaWRlIjp0cnVlfSx7Im5hbWUiOiJhdmF0YXIyIiwiaGlkZSI6dHJ1ZX0seyJuYW1lIjoiYXZhdGFyMSIsImltYWdlX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS82NzA0NTEzOD92PTQifSx7Im5hbWUiOiJjb250cmlidXRvcnMiLCJ0ZXh0IjoiVHlzb24zMTAxIn0seyJuYW1lIjoic3RhcnMiLCJ0ZXh0IjoiMSJ9XQ&s=d69a4259bf4aa69a450cd032dc68afb8168379edf17a22c83d0a79abb5d3d5bf",
     },
