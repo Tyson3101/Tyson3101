@@ -30,19 +30,22 @@
     },
   };
 
+  function setPageFromHash() {
+    const hash = window.location.hash.toLowerCase().slice(1);
+    return hash && Object.keys(pages).includes(hash) ? hash : "home";
+  }
+
+  function handleHashChange() {
+    const newPage = setPageFromHash();
+    if (newPage !== activePage) handlePages(newPage);
+  }
+
   function changeCSSVariable(name: string, value: string) {
     document.documentElement.style.setProperty(name, value);
   }
 
   let changingPage = false;
-  let activePage = window.location.hash
-    ? window.location.hash.toLowerCase().slice(1)
-    : "home";
-  window.onhashchange = () => {
-    activePage = window.location.hash
-      ? window.location.hash.toLowerCase().slice(1)
-      : "home";
-  };
+  let activePage = setPageFromHash();
 
   let squares: number[] = [];
 
@@ -50,23 +53,23 @@
     squares = Array(100).fill(0);
   }
 
-  async function handlePages(page?: any) {
+  async function handlePages(page: any) {
     if (changingPage) return;
     changingPage = true;
 
-    const oldDOMEle = document.getElementById(activePage) as HTMLDivElement;
-    if (oldDOMEle) oldDOMEle.style.display = "none";
+    const oldDOMEle = document.getElementById(activePage);
+    if (oldDOMEle) {
+      oldDOMEle.style.display = "none";
+    }
 
     const nextPage =
-      Object.keys(pages)[
-        Object.keys(pages).findIndex((key) => key === activePage) + 1
-      ] || "home";
+      Object.keys(pages)[Object.keys(pages).indexOf(activePage) + 1] || "home";
+    const newActivePage = typeof page === "string" ? page : nextPage;
 
-    const newActivePage = typeof page === "string" ? page : null || nextPage;
     document.body.style.background = pages[newActivePage].background;
 
     const newBackground = pages[newActivePage].background;
-    const allSquares = [...document.querySelectorAll(".square")].sort(
+    const allSquares = Array.from(document.querySelectorAll(".square")).sort(
       () => Math.random() - 0.5
     ) as HTMLDivElement[];
 
@@ -75,7 +78,7 @@
       await wait(Math.random() * 20);
     }
 
-    Object.keys(pages[activePage]).forEach((key: string) => {
+    Object.keys(pages[activePage]).forEach((key) => {
       changeCSSVariable(`--${key}`, pages[activePage][key]);
     });
 
@@ -101,7 +104,9 @@
   });
 </script>
 
-<Navbar pages={{ ...pages }} {handlePages} />
+<svelte:window on:hashchange={handleHashChange} />
+
+<Navbar {activePage} {pages} {handlePages} />
 <div class="grid">
   {#each squares as _, index}
     <div class="square" on:click={handlePages} on:keydown={handlePages} />
@@ -109,7 +114,7 @@
 </div>
 
 <main>
-  {#if activePage === "home" || !Object.keys(pages).some((page) => page === activePage)}
+  {#if activePage === "home"}
     <Home />
   {/if}
   {#if activePage === "projects"}

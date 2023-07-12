@@ -1,18 +1,11 @@
 <script lang="ts">
+  export let activePage: string;
   export let pages: any;
   export let handlePages: (pages: any) => any;
 
   function captalizeFirstLetter(str: string) {
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
-
-  let activePage = window.location.hash
-    ? window.location.hash.slice(1)
-    : "home";
-
-  window.onhashchange = () => {
-    activePage = window.location.hash ? window.location.hash.slice(1) : "home";
-  };
 </script>
 
 <nav>

@@ -34,11 +34,23 @@
   <div class="wrapper">
     <form action="https://formspree.io/f/xleyedwo" method="POST">
       <label for="name">Name</label>
-      <input type="text" name="name" id="name" required />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="JimmyJohn"
+        required
+      />
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" required />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="jimmy@gmail.com"
+        required
+      />
       <label for="message">Message</label>
-      <textarea name="message" id="message" required />
+      <textarea name="message" id="message" placeholder="Hello" required />
       <button type="submit">Send</button>
     </form>
   </div>
@@ -61,7 +73,7 @@
     font-size: 3rem;
     z-index: 1000;
     position: sticky;
-    top: 20px; /* Adjust the top value as needed */
+    top: 20px;
   }
 
   .links {
@@ -71,7 +83,7 @@
     gap: 1em;
     margin-bottom: 2rem;
     position: sticky;
-    top: 90px; /* Adjust the top value as needed */
+    top: 90px;
   }
 
   .links button {
@@ -132,7 +144,7 @@
   }
 
   .contact form input {
-    padding: 0.3rem;
+    padding: 0.2rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     border: none;
@@ -152,7 +164,7 @@
     font-size: 1.5rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: #8e91f6;
+    background-color: #0026e4;
     color: white;
     cursor: pointer;
   }

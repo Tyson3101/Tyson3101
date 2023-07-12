@@ -63,7 +63,7 @@
   }
 
   .project .content {
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     padding: 0.6rem;
   }
 
