@@ -1,5 +1,4 @@
 <script lang="ts">
-  let linkIconSize = 48;
   const links = [
     {
       name: "Github",
@@ -8,7 +7,7 @@
     },
     {
       name: "Twitter",
-      link: "https://twitter.com/Tysonf3101",
+      link: "https://twitter.com/Tyson3101",
       icon: "https://img.icons8.com/color/48/twitter--v1.png",
     },
     {
@@ -34,7 +33,7 @@
       {#each links as link}
         <button>
           <a href={link.link} target="_blank">
-            <img src={link.icon} alt={link.name} width={linkIconSize} />
+            <img src={link.icon} alt={link.name} width={48} />
             {link.name}
           </a>
         </button>
