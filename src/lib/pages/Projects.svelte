@@ -48,15 +48,14 @@
       ],
     },
     {
-      name: "Auto TikTok Scroller",
+      name: "RLEsports Guesser Unlimited",
       description:
-        "A Chrome Extension and Bookmarklet that adds an auto-scroll feature on TikTok.",
-      github: "https://github.com/Tyson3101/Auto-TikTok-Scroller",
-      live: "https://chrome.google.com/webstore/detail/auto-tiktok-scroller/ngnmmnppfloibngkifccjiljhnjoleaa",
+        "An unlimited version of https://rleguessr.app | https://twitter.com/RL_Cal.",
+      github: "https://github.com/Tyson3101/RLEsports-Guesser-Unlimited",
+      live: "https://rlesports-guesser-unlimited.vercel.app/",
       language: "typescript",
       stats: [
-        "https://badgen.net/github/stars/Tyson3101/Auto-TikTok-Scroller?color=blue&label=Stars&logo=github&logoColor=white&style=for-the-badge",
-        "https://badgen.net/chrome-web-store/users/ngnmmnppfloibngkifccjiljhnjoleaa?color=blue&label=Users&logo=google-chrome&logoColor=white&style=for-the-badge",
+        "https://badgen.net/github/stars/Tyson3101/RLEsports-Guesser-Unlimited?color=blue&label=Stars&logo=github&logoColor=white&style=for-the-badge",
       ],
     },
     {
@@ -75,14 +74,14 @@
 
   const otherProjects = [
     {
-      link: "https://github.com/Tyson3101/RLE-Guesser-Unlimited",
-      preview:
-        "https://ondemand.bannerbear.com/signedurl/D0nJ4XLedwbENRZa1x/image.jpg?modifications=W3sibmFtZSI6InJlcG8iLCJ0ZXh0IjoiVHlzb24zMTAxIC8gKlJMRXNwb3J0cy1HdWVzc2VyLVVubGltaXRlZCoifSx7Im5hbWUiOiJkZXNjIiwidGV4dCI6IkFuIHVubGltaXRlZCB2ZXJzaW9uIG9mIGh0dHBzOi8vcmxlZ3Vlc3NyLmFwcCB8IGh0dHBzOi8vdHdpdHRlci5jb20vUkxfQ2FsIn0seyJuYW1lIjoiYXZhdGFyNSIsImhpZGUiOnRydWV9LHsibmFtZSI6ImF2YXRhcjQiLCJoaWRlIjp0cnVlfSx7Im5hbWUiOiJhdmF0YXIzIiwiaGlkZSI6dHJ1ZX0seyJuYW1lIjoiYXZhdGFyMiIsImhpZGUiOnRydWV9LHsibmFtZSI6ImF2YXRhcjEiLCJpbWFnZV91cmwiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvNjcwNDUxMzg_dj00In0seyJuYW1lIjoiY29udHJpYnV0b3JzIiwidGV4dCI6IlR5c29uMzEwMSJ9LHsibmFtZSI6InN0YXJzIiwidGV4dCI6IjAifV0&s=d944ddef1f31d00ec2a0e16707eaff3d52a34ba07f855dc770624614aaa486f8",
-    },
-    {
       link: "https://github.com/Tyson3101/Tyson3101",
       preview:
         "https://ondemand.bannerbear.com/signedurl/D0nJ4XLedwbENRZa1x/image.jpg?modifications=W3sibmFtZSI6InJlcG8iLCJ0ZXh0IjoiVHlzb24zMTAxIC8gKlR5c29uMzEwMSoifSx7Im5hbWUiOiJkZXNjIiwidGV4dCI6Ik15IG1haW4gR2l0SHViIHBhZ2UifSx7Im5hbWUiOiJhdmF0YXI1IiwiaGlkZSI6dHJ1ZX0seyJuYW1lIjoiYXZhdGFyNCIsImhpZGUiOnRydWV9LHsibmFtZSI6ImF2YXRhcjMiLCJoaWRlIjp0cnVlfSx7Im5hbWUiOiJhdmF0YXIyIiwiaGlkZSI6dHJ1ZX0seyJuYW1lIjoiYXZhdGFyMSIsImltYWdlX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS82NzA0NTEzOD92PTQifSx7Im5hbWUiOiJjb250cmlidXRvcnMiLCJ0ZXh0IjoiVHlzb24zMTAxIn0seyJuYW1lIjoic3RhcnMiLCJ0ZXh0IjoiMCJ9XQ&s=26a2d8950a538c47b5df6b415ae5c6074ab8538e3f3701766ce61ca41ef74e15",
+    },
+    {
+      link: "https://github.com/Tyson3101/Auto-Reels-Scroller",
+      preview:
+        "https://ondemand.bannerbear.com/signedurl/D0nJ4XLedwbENRZa1x/image.jpg?modifications=W3sibmFtZSI6InJlcG8iLCJ0ZXh0IjoiVHlzb24zMTAxIC8gKkF1dG8tUmVlbHMtU2Nyb2xsZXIqIn0seyJuYW1lIjoiZGVzYyIsInRleHQiOiJBIENocm9tZSBFeHRlbnNpb24gdGhhdCBhZGRzIGFuIGF1dG8tc2Nyb2xsIGZlYXR1cmUgb24gSW5zdGFncmFtIFJlZWxzIHNvIHlvdSBjYW4gd2F0Y2ggUmVlbHMgd2l0aG91dCB0aGUgbmVlZCB0byB0b3VjaCB5b3VyIG1vdXNlLiJ9LHsibmFtZSI6ImF2YXRhcjUiLCJoaWRlIjp0cnVlfSx7Im5hbWUiOiJhdmF0YXI0IiwiaGlkZSI6dHJ1ZX0seyJuYW1lIjoiYXZhdGFyMyIsImhpZGUiOnRydWV9LHsibmFtZSI6ImF2YXRhcjIiLCJoaWRlIjp0cnVlfSx7Im5hbWUiOiJhdmF0YXIxIiwiaW1hZ2VfdXJsIjoiaHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzY3MDQ1MTM4P3Y9NCJ9LHsibmFtZSI6ImNvbnRyaWJ1dG9ycyIsInRleHQiOiJUeXNvbjMxMDEifSx7Im5hbWUiOiJzdGFycyIsInRleHQiOiIwIn1d&s=7be015287da437dfde301356c2e011ee182100750e3866afe0726e1637c6257c",
     },
     {
       link: "https://github.com/Tyson3101/ImageToBase64",
