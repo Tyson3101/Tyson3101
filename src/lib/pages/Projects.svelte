@@ -7,7 +7,7 @@
       description:
         "Bypasses the requirement of Medal Premium in order to download clips without watermarks!",
       github: "https://github.com/Tyson3101/Medal-Bypass",
-      live: "https://medalbypass.web.app/",
+      live: "https://medalbypass.vercel.app/",
       language: "typescript",
       stats: [
         "https://badgen.net/github/stars/Tyson3101/Medal-Bypass?color=blue&label=Stars&logo=github&logoColor=white&style=for-the-badge",
