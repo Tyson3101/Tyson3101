@@ -18,11 +18,21 @@
       description:
         "A Chrome Extension and Bookmarklet that adds an auto-scroll feature on Youtube.",
       github: "https://github.com/Tyson3101/Auto-Youtube-Shorts-Scroller",
-      live: "https://chrome.google.com/webstore/detail/elggcfikfbaijgcofcapgeahjaclpfnf",
+      live: "https://chrome.google.com/webstore/detail/ckbnikemebopgknkpgjlkbffpkkhblbe",
       language: "typescript",
       stats: [
         "https://badgen.net/github/stars/Tyson3101/Auto-Youtube-Shorts-Scroller?color=blue&label=Stars&logo=github&logoColor=white&style=for-the-badge",
-        "https://badgen.net/chrome-web-store/users/elggcfikfbaijgcofcapgeahjaclpfnf?color=blue&label=Users&logo=google-chrome&logoColor=white&style=for-the-badge",
+      ],
+    },
+    {
+      name: "Redirect Blocker",
+      description:
+        "A Chrome Extension that blocks redirects on sketchy sites that have constant redirects to viruses, etc.",
+      github: "https://github.com/Tyson3101/Redirect-Blocker",
+      live: "https://chrome.google.com/webstore/detail/redirect-blocker/egmgebeelgaakhaoodlmnimbfemfgdah",
+      language: "typescript",
+      stats: [
+        "https://badgen.net/github/stars/Tyson3101/Redirect-Blocker?color=blue&label=Stars&logo=github&logoColor=white&style=for-the-badge",
       ],
     },
     {
@@ -56,18 +66,6 @@
       language: "typescript",
       stats: [
         "https://badgen.net/github/stars/Tyson3101/RLEsports-Guesser-Unlimited?color=blue&label=Stars&logo=github&logoColor=white&style=for-the-badge",
-      ],
-    },
-    {
-      name: "Redirect Blocker",
-      description:
-        "A Chrome Extension that blocks redirects on sketchy sites that have constant redirects to viruses, etc.",
-      github: "https://github.com/Tyson3101/Redirect-Blocker",
-      live: "https://chrome.google.com/webstore/detail/redirect-blocker/egmgebeelgaakhaoodlmnimbfemfgdah",
-      language: "typescript",
-      stats: [
-        "https://badgen.net/github/stars/Tyson3101/Redirect-Blocker?color=blue&label=Stars&logo=github&logoColor=white&style=for-the-badge",
-        "https://badgen.net/chrome-web-store/users/egmgebeelgaakhaoodlmnimbfemfgdah?color=blue&label=Users&logo=google-chrome&logoColor=white&style=for-the-badge",
       ],
     },
   ];
